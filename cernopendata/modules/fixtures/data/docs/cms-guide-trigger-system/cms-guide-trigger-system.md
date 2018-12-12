@@ -71,6 +71,7 @@ For each dataset, the possible HLT trigger paths are listed in the dataset recor
 - [High-Level Trigger information for 2012 CMS open data](/record/1701)
 
 The exact parameters (such as pT or eta cuts, or else) for each component of the HLT path can be found in the data-taking configuration file.
+
 As an example, if you looking for information about `HLT_Dimuon10_Jpsi` trigger, look for a string `process.HLT_Dimuon10_Jpsi`
 in the data-taking configuration file corresponding to the event range of your interest. 
 You will find all components of this HLT path.  You can then find the parameters for each of the components 
