@@ -80,7 +80,8 @@ As an example, you will find one of the components of this path, `hltDimuon10Jps
 
 `process.hltDimuon10JpsiL3Filtered = cms.EDFilter( "HLTMuonDimuonL3Filter",`
 
-The different HLT algorithm classes and the parameters therein are defined in
+followed by the values of different parameters for this algorithm.
+All HLT algorithm classes and definitions of the parameters therein can be found in
 [HLTrigger](https://github.com/cms-sw/cmssw/tree/CMSSW_5_3_X/HLTrigger "HLTrigger"), the example class above in 
 [HLTMuonDimuonL3Filter.h](https://github.com/cms-sw/cmssw/blob/CMSSW_5_3_X/HLTrigger/Muon/interface/HLTMuonDimuonL3Filter.h "HLTMuonDimuonL3Filter.h"). 
 
