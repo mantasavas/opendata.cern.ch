@@ -72,11 +72,13 @@ For each dataset, the possible HLT trigger paths are listed in the dataset recor
 
 The exact parameters (such as pT or eta cuts, or else) for each component of the HLT path can be found in the data-taking configuration file.
 
-As an example, if you looking for information about `HLT_Dimuon10_Jpsi` trigger, look for a string `process.HLT_Dimuon10_Jpsi`
+As an example, if you are looking for information about `HLT_Dimuon10_Jpsi` trigger, look for a string `process.HLT_Dimuon10_Jpsi`
 in the data-taking configuration file corresponding to the event range of your interest. 
-You will find all components of this HLT path.  You can then find the parameters for each of the components 
-further on in the configuration file.
-As an example, you will find one of the components of this path, `hltDimuon10JpsiL3Filtered`, by searching for
+You will find the corresponding CMSSW path, which consists of all the modules (i.e., specifically python-configured CMSSW code) 
+and/or sequences (groups of modules) that make up that trigger path. 
+You can then look for each of these modules or sequences in the same configuration file until your find 
+the parameters with which they are configured.
+As an example, you will find one of the modules of this path, `hltDimuon10JpsiL3Filtered`, by searching for
 `process.hltDimuon10JpsiL3Filtered`and you will see that it is an instantiation of class `HLTMuonDimuonL3Filter`:
 
 `process.hltDimuon10JpsiL3Filtered = cms.EDFilter( "HLTMuonDimuonL3Filter",`
